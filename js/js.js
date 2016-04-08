@@ -11,7 +11,7 @@ window.onload = function(){
 
 	//对按钮进行事件绑定
 	aBtn[0].onclick = function(){
-		if(timer){
+		if(timer ==1){
 			return;
 		};	
 		colorInitial();
@@ -20,7 +20,7 @@ window.onload = function(){
 	}
 
 	aBtn[1].onclick = function(){
-		if(timer){
+		if(timer == 1){
 			return;
 		};	
 		colorInitial();
@@ -31,7 +31,7 @@ window.onload = function(){
 	}
 
 	aBtn[2].onclick = function(){
-		if(timer){
+		if(timer == 1){
 			return;
 		};	
 		colorInitial();
@@ -94,6 +94,7 @@ var colorChange = function(){
 		}else{
 			result[result.length-1].style.background = '#fff';
 			clearInterval(timer);
+			timer = 2;
 		}
 	},1000);
 
